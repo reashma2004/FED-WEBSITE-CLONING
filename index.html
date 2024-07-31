@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRISM Fashion - Dress Shopping</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="PRISM Fashion Logo" />
+        <h1>PRISM Fashion</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="contact us.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <marquee behavior="scroll" direction="left" scrollamount="10">
+      Welcome to PRISM Fashion! &nbsp;&#x1F389;&nbsp;&nbsp;&nbsp;&nbsp; Enjoy
+      our latest collection with exclusive discounts.
+      &nbsp;&#x1F389;&nbsp;&nbsp;&nbsp;&nbsp; Enjoy Shopping!!
+      &nbsp;&#x1F381;&nbsp;&nbsp;&nbsp;&nbsp; Free Shipping On Orders Over $50
+      &nbsp;&#x1F69A;&nbsp;&nbsp;&nbsp;&nbsp; New Arrivals Every Week
+      &nbsp;&#x1F4C5;&nbsp;&nbsp;&nbsp;&nbsp; Limited Time Offer: 20% Off
+      Storewide &nbsp;&#x1F4B0;
+    </marquee>
+    <main>
+      <div class="carousel">
+        <div class="carousel-track">
+          <img src="pic1.png" alt="Dress 1" />
+          <img src="pic2.png" alt="Dress 2" />
+          <img src="pic3.png" alt="Dress 3" />
+          <img src="pic4.png" alt="Dress 4" />
+          <img src="pic5.png" alt="Dress 5" />
+        </div>
+      </div>
+      <div class="shop-now">
+        <a href="product.html" class="shop-now-btn">Shop Now</a>
+      </div>
+      <div class="welcome-message">
+        <center>
+          <h4 class="welcome-text">
+            Welcome to PRISM Fashion! Discover our exclusive collection of
+            dresses perfect for any occasion. Whether you're looking for casual,
+            formal, or party wear, we have something for everyone. Our latest
+            arrivals feature the trendiest designs crafted from high-quality
+            materials to ensure you look your best.
+          </h4>
+          <h4 class="welcome-text">
+            At PRISM Fashion, we believe in celebrating individuality and style.
+            Our curated collections are designed to cater to diverse tastes and
+            preferences. Enjoy a seamless shopping experience with our
+            user-friendly website, and take advantage of our special offers and
+            discounts.
+          </h4>
+          <h4 class="welcome-text">
+            We value our customers and strive to provide exceptional service. If
+            you have any questions or need assistance, our support team is here
+            to help. Join our fashion community and stay updated with the latest
+            trends by subscribing to our newsletter.
+          </h4>
+          <h2 class="welcome-text" style="color: red">Happy shopping!</h2>
+        </center>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 PRISM Fashion. All rights reserved.</p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const username = localStorage.getItem("username");
+        if (username) {
+          document.getElementById("profileLink").textContent = username
+            .charAt(0)
+            .toUpperCase();
+          document.getElementById("profileLink").href = "profile.html";
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  height: 100px; /* Define the height of the header */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100%; /* Make the logo height match the header height */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image scales to fit without distortion */
+  margin-right: 10px; /* Space between logo image and text */
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 100px; /* Vertically center text with the height of the header */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Cart menu styles */
+#cart-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  right: 0;
+  top: 60px; /* Adjust as needed */
+  width: 300px; /* Adjust as needed */
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  padding: 20px;
+}
+
+.cart-menu {
+  /* Add any additional styling for the cart menu */
+   background-color: #fff; /* White background for the cart menu */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Space inside the menu */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  width: 300px; /* Width of the cart menu */
+  max-height: 400px; /* Maximum height to prevent overflow */
+  overflow-y: auto; /* Scroll if content exceeds max-height */
+  z-index: 1000; /* Ensure the menu is above other content */
+  font-size: 14px; /* Adjust font size for readability */
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; /* Add border to separate items */
+  align-items: center;
+}
+
+.cart-item img {
+  width: 50px; /* Small image size */
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Cart total */
+#cart-total-header {
+  font-weight: bold;
+}
+
+#checkout-header,
+#place-order {
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#checkout-header:hover,
+#place-order:hover {
+  background-color: #45a049;
+}
+
+/* Dialog styles */
+.dialog {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.dialog-content {
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#order-confirmation-dialog {
+  width: 300px; /* Smaller width for confirmation dialog */
+}
+
+#payment-details input {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+}
+
+#payment-details label {
+  margin-top: 10px;
+  display: block;
+}
+
+
+#address-form,
+#payment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#address-form label,
+#payment-form label {
+  margin: 10px 0 5px;
+}
+
+#address-form input,
+#address-form textarea,
+#payment-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#payment-form input[type="radio"] {
+  margin-right: 10px;
+}
+
+#continue-to-payment,
+#confirm-payment,
+#close-confirmation {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#continue-to-payment:hover,
+#confirm-payment:hover,
+#close-confirmation:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}

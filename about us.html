@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="about us.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="PRISM Fashion Logo" />
+        <h1>PRISM Fashion</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="contact us.html">Contact</a></li>
+          <li><a href="index.html#cart">Cart</a></li>
+          <li><a href="login.html" id="profileLink">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Welcome to Prism Fashion, your premier destination for all things style
+        and elegance. We are committed to delivering the highest quality
+        fashion, focusing on impeccable design, exceptional craftsmanship, and
+        unbeatable value.
+      </p>
+      <p>
+        Established in 2024, Prism Fashion was born out of a passion for
+        creating a fashion experience that is both luxurious and accessible. Our
+        founders envisioned a brand that combines modern trends with timeless
+        classics, offering pieces that cater to every taste and occasion.
+      </p>
+      <p>
+        Since our inception, we have expanded our reach globally, bringing our
+        curated collections to fashion enthusiasts around the world. At Prism
+        Fashion, we pride ourselves on our dedication to sustainable and ethical
+        practices, ensuring that every piece not only looks good but feels good
+        too.
+      </p>
+      <p>
+        We invite you to explore our diverse range of fashion items and discover
+        what makes Prism Fashion unique. Your satisfaction is our top priority,
+        and we are always here to assist with any questions or feedback you may
+        have.
+      </p>
+      <p>
+        Thank you for choosing Prism Fashion. We look forward to being a part of
+        your fashion journey!
+      </p>
+      <p>
+        Sincerely,<br />
+        The Prism Fashion Team
+      </p>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const username = localStorage.getItem("username");
+        if (username) {
+          document.getElementById("profileLink").textContent = username
+            .charAt(0)
+            .toUpperCase();
+          document.getElementById("profileLink").href = "profile.html";
+        }
+      });
+    </script>
+  </body>
+</html>
